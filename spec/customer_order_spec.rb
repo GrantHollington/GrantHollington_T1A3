@@ -17,7 +17,7 @@
 # require 'chuck_norris_jokes'
 # chuck_norris = ChuckNorrisJokes::ChuckNorris.new
 # puts chuck_norris.tell_me_a_joke_now
-<<<<<<< HEAD
+<<<<<<< git 
 
 describe CustomerOrder do
     before (:each) do
