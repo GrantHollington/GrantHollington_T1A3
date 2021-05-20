@@ -7,9 +7,9 @@
 # 6. should be able to get user quantity
 # 7. should be able to get the final bill
 
-require 'colorize'
-puts "This is blue".colorize(:blue)
+# require 'colorize'
+# puts "This is blue".colorize(:blue)
 
-require 'chuck_norris_jokes'
-chuck_norris = ChuckNorrisJokes::ChuckNorris.new
-puts chuck_norris.tell_me_a_joke_now
+# require 'chuck_norris_jokes'
+# chuck_norris = ChuckNorrisJokes::ChuckNorris.new
+# puts chuck_norris.tell_me_a_joke_now
