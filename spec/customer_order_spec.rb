@@ -1,9 +1,5 @@
 # test cases:
-<<<<<<< HEAD
 # 1. test if the customer instance is created and the name is readable (create customer instance)
-=======
-# 1. test if the customer instance is created and the name is readable
->>>>>>> 632e58c58e143a22faea7deb4081d45a1426f8ec
 # 2. test should display a welcome message
 # 3. test should read the list of clothing 
 # 4. should be able to get user input/choice
