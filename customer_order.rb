@@ -12,9 +12,9 @@ class CustomerOrder
 
     def catalog
         # defining the catalog items in a hash. Create instance variable to use it in other methods of class
-        catalog_items = {"1.Shirts" => 50, "2.Pants" => 70, "Shoes" => 100}
+        catalog_items = {"1.Shirts" => 50, "2.Pants" => 70, "3.Shoes" => 100}
         # hard code: update the catalog list (containing item number and price) with the right price if the menu items are updated or the code will not work
-        @catalog_list = {1 => 50, 2 => 70 3 => 100}
+        @catalog_list = {1 => 50, 2 => 70, 3 => 100}
         #looping through catalog items and displaying in a nice format
         catalog_items.each do |item, price|
         p "#{item} ------$#{price}"
@@ -36,9 +36,9 @@ class CustomerOrder
         # calculate the total bill
         @bill += @item_price * @quantity
     end
-    def place_order(user_choice)
-        get_item_price(user_choice)
-        get_quantity
-        calculate_bill
-    end
+    # def place_order(user_choice)
+    #     get_item_price(user_choice)
+    #     get_quantity
+    #     calculate_bill
+    # end
 end
