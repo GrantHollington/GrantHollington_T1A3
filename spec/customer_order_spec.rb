@@ -32,7 +32,7 @@ describe CustomerOrder do
     end
     it "Should get the item price based on user choice" do 
         user_choice = 1
-        expect(@cutomer.get_item_price(user_choice)).to eq(10)
+        expect(@customer.get_item_price(user_choice)).to eq(10)
     end
     it "Should get the quantity" do
         expect(customer.get_quantity).to be > 0
