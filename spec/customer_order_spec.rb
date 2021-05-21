@@ -17,7 +17,6 @@
 # require 'chuck_norris_jokes'
 # chuck_norris = ChuckNorrisJokes::ChuckNorris.new
 # puts chuck_norris.tell_me_a_joke_now
-<<<<<<< git 
 
 describe CustomerOrder do
     before (:each) do
@@ -26,7 +25,27 @@ describe CustomerOrder do
     end
     it "must have a readable name" do
         expect(@customer.name).to eq("Bob")
+    end
+    it "display welcome message" do
+        msg = "Welcome to Grant's clothing store, choose an item from the catalog or enter exit to quit"
+        expect(@customer.welcome_msg).to eq(msg)
+    end
+    it "should be able to read the list of" do
+        catalog = {"1.Shirts" = > 50, "2.Pants" => 70, "Shoes" => 100}
+            expect (@customer.catalog).to eq(catalog)
+    end
+    it "Should get the item price based on user choice" do 
+        user_choice = 1
+        expect(@cutomer.get_item_price(user_choice)).to eq(10)
+    end
+    it "Should get the quantity" do
+        expect(customer.get_quantity).to be > 0
+    end
+    it "Should calculate the final bill" do
+        # define your test data set
+        user_choice = 1
+        final_bill = @customer.get_item_price(user_choice) * @customer.get_quantity
+        expect(@customer.bill).to eq(final_bill)
+    end
 end
 
-=======
->>>>>>> 632e58c58e143a22faea7deb4081d45a1426f8ec
