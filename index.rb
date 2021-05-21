@@ -21,18 +21,20 @@ customer = CustomerOrder.new("Bob")
 # call the welcome_msg and catalog method
 customer.welcome_msg
 # using a flag in case statement
-ordering = true
+# ordering = true
+exit = false
 #loop
-while condition
-        customer.catalog
+until exit
+    customer.catalog
     # get the user input
-    user_choice = gets.chomp
+    user_choice = gets.chomp.to_i
     # case statement
     case user_choice
     when 1,2,3
         customer.place_order(user_choice)
     when 0
-        ordering = false
+        # ordering = false
+        exit = true
         puts "Thankyou for your visit #{customer.name}, your bill is #{customer.bill}"
     else
         puts "invalid choice type 1,2,3 or exit"

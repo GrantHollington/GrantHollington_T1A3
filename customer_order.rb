@@ -36,9 +36,10 @@ class CustomerOrder
         # calculate the total bill
         @bill += @item_price * @quantity
     end
-    # def place_order(user_choice)
-    #     get_item_price(user_choice)
-    #     get_quantity
-    #     calculate_bill
-    # end
+    
+    def place_order(user_choice)
+        get_item_price(user_choice)
+        get_quantity
+        calculate_bill
+    end
 end
