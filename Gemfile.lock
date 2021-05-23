@@ -4,6 +4,7 @@ GEM
     chuck_norris (0.1.0)
     chuck_norris_jokes (0.0.7)
       faraday (~> 1.0.1)
+    colorize (0.8.1)
     faraday (1.0.1)
       multipart-post (>= 1.2, < 3)
     multipart-post (2.1.1)
@@ -27,6 +28,7 @@ PLATFORMS
 DEPENDENCIES
   chuck_norris (~> 0.1.0)
   chuck_norris_jokes (~> 0.0.7)
+  colorize (~> 0.8.1)
   tty-prompt (~> 0.23.1)
 
 BUNDLED WITH

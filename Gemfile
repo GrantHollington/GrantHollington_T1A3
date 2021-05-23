@@ -11,3 +11,5 @@ gem "chuck_norris", "~> 0.1.0"
 gem "chuck_norris_jokes", "~> 0.0.7"
 
 gem "tty-prompt", "~> 0.23.1"
+
+gem "colorize", "~> 0.8.1"

@@ -1,3 +1,5 @@
+# require "colorize"
+
 class CustomerOrder
     attr_reader :bill, :name
     def initialize(name)

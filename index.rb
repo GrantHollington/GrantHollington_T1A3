@@ -14,12 +14,18 @@
 #       2. If the user chooses to exit the app, then display the final bill and exit the app 
 
 require_relative "customer_order.rb"
+require "colorize"
 
 # instance of the customer class
 customer = CustomerOrder.new("Bob")
 
+# Hardcode clothing title and 
+puts
+p "G̲r̲a̲n̲t̲'̲s̲ C̲l̲o̲t̲h̲i̲n̲g̲ S̲t̲o̲r̲e̲"
+puts
 # call the welcome_msg and catalog method
 customer.welcome_msg
+puts
 # using a flag in case statement
 # ordering = true
 exit = false
@@ -35,7 +41,9 @@ until exit
     when 0
         # ordering = false
         exit = true
+        puts
         puts "Thankyou for your visit #{customer.name}, your bill is $#{customer.bill}"
+        puts
     else
         puts "invalid choice type 1,2,3 or exit"
     end
