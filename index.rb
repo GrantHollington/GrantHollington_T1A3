@@ -32,7 +32,7 @@ exit = false
 #loop
 until exit
     customer.catalog
-    # get the user input
+    # get the user inputgi
     user_choice = gets.chomp.to_i
     # case statement
     case user_choice
