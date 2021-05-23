@@ -35,7 +35,7 @@ until exit
     when 0
         # ordering = false
         exit = true
-        puts "Thankyou for your visit #{customer.name}, your bill is #{customer.bill}"
+        puts "Thankyou for your visit #{customer.name}, your bill is $#{customer.bill}"
     else
         puts "invalid choice type 1,2,3 or exit"
     end

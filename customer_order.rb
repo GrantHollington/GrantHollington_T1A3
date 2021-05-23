@@ -24,7 +24,7 @@ class CustomerOrder
     
     def get_item_price(user_choice)
         # retrive the price from the menu list
-        item_price = @catalog_list[user_choice]   
+        @item_price = @catalog_list[user_choice]   
     end
     
     def get_quantity
