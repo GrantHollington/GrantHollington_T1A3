@@ -1,5 +1,6 @@
 require 'colorize'
 require 'tty-prompt'
+prompt = TTY::Prompt.new
 
 class CustomerOrder
     attr_reader :bill, :name

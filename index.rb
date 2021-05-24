@@ -15,6 +15,8 @@
 
 require_relative "customer_order.rb"
 require 'colorize'
+require 'tty-prompt'
+prompt = TTY::Prompt.new
 
 # instance of the customer class
 customer = CustomerOrder.new("Bob")
