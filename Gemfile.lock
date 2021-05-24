@@ -1,6 +1,9 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    asciiart (0.0.10)
+      rainbow (= 2.0.0)
+      rmagick (= 2.13.4)
     chuck_norris (0.1.0)
     chuck_norris_jokes (0.0.7)
       faraday (~> 1.0.1)
@@ -10,6 +13,8 @@ GEM
     multipart-post (2.1.1)
     pastel (0.8.0)
       tty-color (~> 0.5)
+    rainbow (2.0.0)
+    rmagick (2.13.4)
     tty-color (0.6.0)
     tty-cursor (0.7.1)
     tty-prompt (0.23.1)
@@ -26,6 +31,7 @@ PLATFORMS
   arm64-darwin-20
 
 DEPENDENCIES
+  asciiart
   chuck_norris (~> 0.1.0)
   chuck_norris_jokes (~> 0.0.7)
   colorize (~> 0.8.1)
