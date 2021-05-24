@@ -25,7 +25,7 @@ describe CustomerOrder do
         expect(@customer.name).to eq("Bob")
     end
     it "display welcome message" do
-        msg = "Welcome to Grant's clothing store, choose an item from the catalog or enter exit to quit"
+        msg = "Welcome to Grant's clothing store, choose an item from the catalog or enter exit to quit".colorize(:green)
         expect(@customer.welcome_msg).to eq(msg)
     end
     it "Display's the catalog" do

@@ -25,8 +25,8 @@ customer = CustomerOrder.new("Bob")
 puts
 puts "G̲r̲a̲n̲t̲'̲s̲ C̲l̲o̲t̲h̲i̲n̲g̲ S̲t̲o̲r̲e̲".colorize(:color => :yellow, :background => :red)
 puts
-# call the welcome_msg and catalog method
-customer.welcome_msg
+# call the welcome_msg and catalog method. "puts" displayed here instead of 
+puts customer.welcome_msg
 puts
 # using a flag in case statement
 # ordering = true

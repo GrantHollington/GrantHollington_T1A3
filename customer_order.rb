@@ -11,7 +11,7 @@ class CustomerOrder
     end
 
     def welcome_msg
-        puts "Welcome to Grant's clothing store, choose an item from the catalog or enter exit to quit".colorize(:green)
+        "Welcome to Grant's clothing store, choose an item from the catalog or enter exit to quit".colorize(:green)
     end
 
     def catalog
