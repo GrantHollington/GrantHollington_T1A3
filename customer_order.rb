@@ -10,7 +10,7 @@ class CustomerOrder
     end
 
     def welcome_msg
-        p "Welcome to Grant's clothing store, choose an item from the catalog or enter exit to quit"
+        puts "Welcome to Grant's clothing store, choose an item from the catalog or enter exit to quit".colorize(:green)
     end
 
     def catalog
@@ -21,7 +21,7 @@ class CustomerOrder
         @catalog_list = {1 => 50, 2 => 70, 3 => 100}
         #looping through catalog items and displaying in a nice format
         catalog_items.each do |item, price|
-        p "#{item} ------$#{price}"
+        puts "#{item} ------$#{price}"
         end
     end
 

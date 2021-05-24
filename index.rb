@@ -21,7 +21,7 @@ customer = CustomerOrder.new("Bob")
 
 # Hardcode clothing title and 
 puts
-p "G̲r̲a̲n̲t̲'̲s̲ C̲l̲o̲t̲h̲i̲n̲g̲ S̲t̲o̲r̲e̲"
+puts "G̲r̲a̲n̲t̲'̲s̲ C̲l̲o̲t̲h̲i̲n̲g̲ S̲t̲o̲r̲e̲".colorize(:color => :yellow, :background => :red)
 puts
 # call the welcome_msg and catalog method
 customer.welcome_msg
@@ -42,7 +42,7 @@ until exit
         # ordering = false
         exit = true
         puts
-        puts "Thankyou for your visit #{customer.name}, your bill is $#{customer.bill}"
+        puts "Thankyou for your visit #{customer.name}, your bill is $#{customer.bill}".colorize(:light_blue)
         puts
     else
         puts "invalid choice type 1,2,3 or exit"
