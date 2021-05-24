@@ -14,6 +14,7 @@
 # chuck_norris = ChuckNorrisJokes::ChuckNorris.new
 # puts chuck_norris.tell_me_a_joke_now
 require_relative "../customer_order.rb"
+require 'colorize'
 
 describe CustomerOrder do
     before(:each) do

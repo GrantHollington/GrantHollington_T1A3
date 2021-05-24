@@ -1,4 +1,5 @@
-# require "colorize"
+require 'colorize'
+require 'tty-prompt'
 
 class CustomerOrder
     attr_reader :bill, :name
@@ -15,6 +16,7 @@ class CustomerOrder
     def catalog
         # defining the catalog items in a hash. Create instance variable to use it in other methods of class
         catalog_items = {"1.Shirts" => 50, "2.Pants" => 70, "3.Shoes" => 100}
+        # prompt.select("Which Item?", catalog_items)
         # hard code: update the catalog list (containing item number and price) with the right price if the menu items are updated or the code will not work
         @catalog_list = {1 => 50, 2 => 70, 3 => 100}
         #looping through catalog items and displaying in a nice format

@@ -14,7 +14,7 @@
 #       2. If the user chooses to exit the app, then display the final bill and exit the app 
 
 require_relative "customer_order.rb"
-require "colorize"
+require 'colorize'
 
 # instance of the customer class
 customer = CustomerOrder.new("Bob")
