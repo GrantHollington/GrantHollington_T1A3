@@ -22,6 +22,7 @@ prompt = TTY::Prompt.new
 customer = CustomerOrder.new("Bob")
 
 # Hardcode clothing title and 
+artii 'Grants Clothing Store'
 puts
 puts "G̲r̲a̲n̲t̲'̲s̲ C̲l̲o̲t̲h̲i̲n̲g̲ S̲t̲o̲r̲e̲".colorize(:color => :yellow, :background => :red)
 puts
