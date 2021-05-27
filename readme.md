@@ -30,15 +30,40 @@ This is a simple app based on Nandini's Restaurant terminal app which was presen
 
 - Allows the user to exit and then calculates and prints the total bill based on user's input
 
-  
+  The application allows the user to exit as an option at the point they input an item of clothing they would like to select. Once exit is executed the application will display a farewell message and print the final bill based on the items selected and the total cost of those items. This is done using a until statement, which uses the input of exit as false until the user choice is entered as exit. In other words the application will loop around, getting the users input and the loop will only be broken when the input of exit is true. The bill is calaculated within a method by getting the input stored from the get_item_price method and multiplying it by the quanity the user has stored from the get_quantity method. This is stored within an instance variable named @bill. This variable is initialised to have a value of 0 within the initialize method of the Customer0rder class, and then the value is added using the assignment operator += within the calculate_bill method every time the user input's their choices.
+
+# User interaction and Experience
+
+Once the application is run,  A title for the clothing store, a sign, a welcome message and lists for the items is displayed. The welcome message prompts the user choose an item from the clothing store or to enter exit to quit. If the user enters a valid item (1, 2 or 3) the application will ask the user for the amount of the item they have selected. The app will allow the user to select more items by repeating the process until the user enters "exit". If the user enters a number that is not attached to a item it will let the user know that they have entered and invalid choice, and will prompt the user to enter a valid choice. Once the user is finished with their choices and wish to exit the app, a thankyou message is displayed as well as the bill for the order created during that instance of the application. 
+
+
 
 # Control Flow Diagram
 
+The flowchart below displays the control flow of the terminal application. The application prints a welcome message and the catalog of items. It will then enter the until loop, which will continue until the user enters exit. Once exit is entered the final bill based on the users input is calculated and displayed. Invalid choices are handled by displaying to the user they have entered an invalid choice and prompting the user to enter a correct choice within the loop.  
+
+ [clothingstore.pdf](docs/clothingstore.pdf) 
+
+
+
+
+
 # Implementation Plan
 
+Implementation of the program was done using a number of steps which were monitored using a trello board. The process was completed using the terminal app presentation in class and was made in the following order:
 
 
 
+- Create a user story to identify features 
+- Write the pseudocode for the app based on the user story
+- Writing of the code using test driven development process (TDD). This involved writing test cases based on the features of the app and then writing the code based on the featrues defined within those test cases.
+- Once the code and test cases were written, the tests were run one by one using the ruby test gem rspec, by commenting out the other tests until the test that is focused on is passed 
+
+- Making adjustments to the code once tests had passed to improve the look of the application and add features using ruby gems. These included the gems artti to display a title for the terminal app, and colorize to add color to the app. A table for the items and cost was also added using the terminal table gem, and tty-box to display a sign for the clothing store.
+
+A trello board was used in order to indentify tasks and allocate a timeframe to complete each task. 
+
+# Help Documentation
 
 
 
